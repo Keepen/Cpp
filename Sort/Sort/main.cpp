@@ -17,7 +17,7 @@ void show(vector<T>& v) {
 int main() {
 	vector<int> v = { 3,4,5,2,1,2,9,5,6,7,8 };
 	int size = v.size();
-	cout << "ÅÅÐòÇ°: ";
+	cout << "ÅÅÐòÇ°: " << endl;
 	show(v);
 	//insertSort(v, size);
 	//selectSort(v, size);
@@ -25,7 +25,8 @@ int main() {
 	//merge(v, 0, size / 2, size - 1);
 	//mergeSort(v, size);
 	//bubbleSort(v, size);
-	heapSort(v, size);
+	//heapSort(v, size);
+
 	cout << "ÅÅÐòºó£º";
 	show(v);
 	return 0;
