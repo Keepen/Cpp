@@ -1,0 +1,17 @@
+﻿  main.cpp
+e:\git\cpp\sortpractice\sortpractice\mergesort.h(17): warning C4018: “<”: 有符号/无符号不匹配
+  e:\git\cpp\sortpractice\sortpractice\mergesort.h(74): note: 参见对正在编译的函数 模板 实例化“void merge<int>(std::vector<int,std::allocator<_Ty>> &,int,int,int)”的引用
+          with
+          [
+              _Ty=int
+          ]
+  e:\git\cpp\sortpractice\sortpractice\main.cpp(26): note: 参见对正在编译的函数 模板 实例化“void mergeSort<int>(std::vector<int,std::allocator<_Ty>> &,int)”的引用
+          with
+          [
+              _Ty=int
+          ]
+e:\git\cpp\sortpractice\sortpractice\mergesort.h(25): warning C4018: “>=”: 有符号/无符号不匹配
+e:\git\cpp\sortpractice\sortpractice\mergesort.h(26): warning C4018: “<”: 有符号/无符号不匹配
+e:\git\cpp\sortpractice\sortpractice\mergesort.h(30): warning C4018: “>=”: 有符号/无符号不匹配
+e:\git\cpp\sortpractice\sortpractice\mergesort.h(31): warning C4018: “<”: 有符号/无符号不匹配
+  SortPractice.vcxproj -> E:\Git\Cpp\SortPractice\Debug\SortPractice.exe
