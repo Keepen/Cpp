@@ -1,8 +1,10 @@
 #include <iostream>
 #include <string>
 using namespace std;
-const int gap = 366 + 365 * 3;
-//const int a[4] = { 366,365,365,365 };
+//美国节日：
+//	给出年份，打印出本年所有的美国节日
+
+
 const int week[7] = { 6,7,1,2,3,4,5 };
 
 //判断是否是闰年
