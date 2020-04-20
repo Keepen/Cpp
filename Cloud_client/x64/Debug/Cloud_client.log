@@ -1,0 +1,5 @@
+﻿  cloud_client.cpp
+e:\vs project\cpp\cloud_client\cloud_client\httplib.h(2871): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs project\cpp\cloud_client\cloud_client\httplib.h(2876): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs project\cpp\cloud_client\cloud_client\cloud_client.hpp(115): warning C4715: “DataManager::InitLoad”: 不是所有的控件路径都返回值
+  Cloud_client.vcxproj -> E:\VS PROJECT\Cpp\Cloud_client\x64\Debug\Cloud_client.exe
