@@ -170,6 +170,8 @@ DataType RSA::getEkey(DataType orla) {
 }
 //获取d值 -- 密钥
 //e * d % f(n) == 1;
+//大数情况下，由于解密是暴力遍历，所以无法在合理的时间内解出
+
 DataType RSA::getDkey(DataType ekey, DataType orla) {
 	DataType dkey = orla / ekey;	//从两数的商开始搜索
 	while (true) {
