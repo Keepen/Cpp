@@ -51,11 +51,12 @@ public:
 	DataType getDkey(DataType ekey, DataType orla);
 	//获取最大公约数
 	DataType getGcd(DataType data1, DataType data2);
+	//扩展的欧几里得算法，求模反元素，即加密密钥
+	DataType exGcd(DataType a, DataType b, DataType& x, DataType& y);
 	//产生所有的key
 	void getKeys();
 	//向外部提供接口，获取公钥、私钥、n
-	Key getallKey();
-	
+	Key getallKey();	
 private:
 	Key _key;
 

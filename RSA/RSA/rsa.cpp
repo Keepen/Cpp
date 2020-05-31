@@ -173,13 +173,17 @@ DataType RSA::getEkey(DataType orla) {
 //大数情况下，由于解密是暴力遍历，所以无法在合理的时间内解出
 
 DataType RSA::getDkey(DataType ekey, DataType orla) {
-	DataType dkey = orla / ekey;	//从两数的商开始搜索
-	while (true) {
-		if ((dkey * ekey) % orla == 1) {
-			return dkey;
-		}
-		++dkey;
-	}
+	DataType x = 0, y = 0;
+	exGcd(ekey, orla, x, y);
+	//变化，让解密密钥是一个比较小的正值
+	return (x%orla + orla) % orla;
+	//DataType dkey = orla / ekey;	//从两数的商开始搜索
+	//while (true) {
+	//	if ((dkey * ekey) % orla == 1) {
+	//		return dkey;
+	//	}
+	//	++dkey;
+	//}
 }
 //获取最大公约数
 //	碾转相除法：
@@ -193,6 +197,18 @@ DataType RSA::getGcd(DataType data1, DataType data2) {
 	return data2;
 }
 
+DataType RSA::exGcd(DataType a, DataType b, DataType& x, DataType& y) {
+	if (b == 0) {
+		x = 1;
+		y = 0;
+		return a;
+	}
+	DataType gcd = exGcd(b, a % b, x, y);
+	DataType x1 = x, y1 = y;
+	x = y1;
+	y = x1 - a / b - y1;
+	return gcd;
+}
 
 
 
